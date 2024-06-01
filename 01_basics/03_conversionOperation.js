@@ -1,3 +1,4 @@
+/*
 let score = "33abc";
 console.log(typeof score);
 
@@ -17,4 +18,16 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 console.log(booleanIsLoggedIn);
 
 // "" => false
-// "Kushal" => true
+// "Kushal" => true  
+*/
+
+// ***********************Operations*************************
+
+let value = 33;
+let negativeValue = -value;
+// console.log(negativeValue);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
