@@ -1,0 +1,30 @@
+ <!-- 03.html continued. Start and stop button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const myNameAndDate = function(){
+        console.log("kushal", Date.now());
+    }
+
+    let internalId
+    document.querySelector('#start').addEventListener('click', function(){
+        internalId = setInterval(myNameAndDate,1000)
+    })
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(internalId)
+        console.log("stopped")
+    })
+</script>
+</html>
